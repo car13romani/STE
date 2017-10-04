@@ -19,6 +19,6 @@ myKey <- list(rectangles=list(col = colors2),text=list(lab=pattern2),
               font=.5,
               width=.4,
               columns=3)
-levelplot(r, col.regions=colors1, colorkey=FALSE,key = myKey, names.attr = dates, scales=list(draw=FALSE), pretty=FALSE)
+levelplot(r, col.regions=colors1, colorkey=FALSE,key = myKey, names.attr = substr(d, 1, 4), scales=list(draw=FALSE), pretty=FALSE)
 }
 

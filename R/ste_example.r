@@ -2,7 +2,6 @@
 #pathCode <- '~/Dropbox/MESTRADO/STE/R'
 ste.example <- function(pathCode){
 
-paste(pathCode, "/raster", sep='')
 source(paste(pathCode, "/ste_import.r", sep=''))
 source(paste(pathCode, "/ste_event.r", sep=''))
 source(paste(pathCode, "/ste_plot_input.r", sep=''))
@@ -10,16 +9,16 @@ source(paste(pathCode, "/ste_plot_result.r", sep=''))
 
 
 #ste.import("name_rasterTimeSeries", "path_imagesAndMetadata")
-ste.import("clip4_rt","/home/carlos/Dropbox/MESTRADO/Projeto_BDG/rts")
+ste.import("rts_example",'~/Dropbox/MESTRADO/STE/example')
 
 
 #ste.event("name_rasterTimeSeries",name_rasterQueryResult","queryString")
-ste.event("clip4_rt", "clip4_out", "meetby(Fallow_Cotton, 2006)&before(Fallow_Cotton, 2012)")
+ste.event("rts_example", "rts_example_out", "meetby(Fallow_Cotton, 2006)&before(Fallow_Cotton, 2012)")
 
 
-ste.plot_input("clip4_rt")
+ste.plot_input("rts_example")
 
-ste.plot_result("clip4_out")
+ste.plot_result("rts_example_out")
 
 
 #ste.event("clip4_rt", "clip4_out", "before(Fallow_Cotton, 2010)")

@@ -23,7 +23,7 @@ ste.event<-function(X, out, expr){
   }  
 
   # creating a RasterStackTS object:
-  rt.r <- rts(rt.r, d)
+  rt.r <- rts(rt.r, as.Date(d))
   
   # write RasterStackTS in file out
   write.rts(rt.r, out, overwrite=TRUE)

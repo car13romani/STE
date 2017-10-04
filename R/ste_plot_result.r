@@ -14,6 +14,6 @@ ste.plot_result <- function(X){
                 width=.4,
                 columns=1)
   
-  levelplot(r, col.regions = c("#FFFFFF","#000000"), colorkey=FALSE, key = myKey2, names.attr = dates, scales=list(draw=FALSE))
+  levelplot(r, col.regions = c("#FFFFFF","#000000"), colorkey=FALSE, key = myKey2, names.attr = substr(d, 1, 4), scales=list(draw=FALSE))
 }
 
