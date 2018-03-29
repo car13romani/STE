@@ -1,3 +1,3 @@
-install.packages("rts")
+install.packages("raster")
 install.packages("rasterVis")
 install.packages("rgdal")
